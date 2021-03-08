@@ -1,0 +1,43 @@
+.content {
+
+  label {
+    font-weight: bold;
+  }
+
+  .name-email,
+  .pass-conf {
+    flex-basis: 50%;
+
+    input{
+      padding: 3px 10px;
+    }
+  }
+
+  .headline input {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .content {
+    text-align: center;
+
+    .name-email,
+    .pass-conf {
+      flex-basis: 100%;
+    }
+
+    .box-form {
+      justify-content: center;
+    }
+
+
+  }
+
+}

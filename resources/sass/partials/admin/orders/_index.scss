@@ -1,0 +1,53 @@
+main .order-index {
+  font-family: $primary-font;
+  color: $grey;
+
+  h2 {
+    text-align: center;
+  }
+
+  // .btn-1{
+  //   background-color: $brandColor;
+  //   color: white;
+  //   padding: 8px 10px;
+  // }
+
+  th {
+    background-color: $secondaryColor;
+  }
+
+  td,
+  th {
+    color: $grey;
+    line-height: 30px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+
+    .id {
+      text-align: center;
+    }
+    // .day,
+    .time,
+    .amount {
+      display: none;
+    }
+
+    .id-main {
+      text-align: center;
+    }
+
+    // .day-main,
+    .time-main,
+    .amount-main {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+}

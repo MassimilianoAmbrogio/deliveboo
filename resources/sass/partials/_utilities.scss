@@ -1,0 +1,80 @@
+// Buttons
+a.btn,
+button.btn,
+input.btn {
+    text-transform: uppercase;
+    margin: 15px;
+    font-weight: 700;
+    color: $white;
+    outline: none;
+    border: 1px solid transparent;
+
+	&:hover {
+	color: $yellow;
+	border: 1px solid $yellow;
+	}  
+}
+
+.btn-brand {
+	background: $brandColor;
+}
+
+.btn-red {
+	background: $red;
+}
+.btn-green {
+	background: $green;
+}
+.btn-grey {
+	background: $grey;
+}
+.btn-secondary {
+	background: $secondaryColor;
+}
+
+// Colored Icons - fontAwesome
+
+.brand-icon {
+    color: $brandColor;
+}
+.secondary-icon {
+    color: $secondaryColor;
+}
+
+.red-icon {
+    color: $red;
+}
+.green-icon {
+    color: $green;
+}
+
+// Table
+
+.table {
+    color: $grey;
+}
+
+.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: rgba($yellow, 0.5) !important;
+}
+
+ul.pagination {
+    margin-top: 25px;
+    border: none;  
+    font-family: $admin-font;
+    color: $grey;
+
+        .page-item.active .page-link {
+            border-color: $grey;
+            background: $secondaryColor;
+        }
+
+        .page-item a.page-link {
+                color: $grey;
+                background: $white;
+
+                &:hover {
+                    background:$yellow;
+                }
+        }
+}

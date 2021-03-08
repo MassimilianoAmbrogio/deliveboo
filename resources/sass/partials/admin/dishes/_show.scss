@@ -1,0 +1,24 @@
+.dish-detail {
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+
+    .admin-title {
+        font-family: $admin-font;
+        font-size: 4rem;
+    }
+
+    .box-detail {
+        background: $lightGrey;
+        color: $grey;
+        font-size: 1.5rem;
+        padding: 20px;
+        margin: 25px 10px;
+    }
+
+    .dish-desc {
+        flex-basis: 50%;
+        margin-left: 50px;
+    }
+
+}

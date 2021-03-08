@@ -1,0 +1,83 @@
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-image: url('../img/bg_hero_home_mobile.jpg');
+  background-position: bottom center;
+  .start {
+    min-width: 45%;
+    flex-direction: column;
+    .btn-start {
+      align-self: center;
+      padding: 10px 50px;
+      min-width: 50%;
+      font-family: $title-font;
+      font-size: 3.25rem;
+      font-weight: 900;
+      text-align: center;
+      text-decoration: none;
+      color: $btn-start-color;
+      background-color: $brandColor;
+      border-radius: 45px;
+      transition: .2s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    .text {
+      font-family: $title-font;
+      
+      font-weight: 900;
+      flex-direction: column;
+      #text-sx,
+      #text-mx,
+      #text-dx {
+        white-space: nowrap;
+        font-size: 2.75rem;
+        align-self: flex-start;
+      }
+      #text-sx {
+        color: $secondaryColor;
+      }
+      #text-mx {
+        color: $green;
+      }
+      #text-dx {
+        color: $brandColor;
+      }
+    }
+  }
+
+  .scooter {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+      background-image: url('../img/bg_hero_home.jpg');
+    .start .text {
+      #text-sx {
+        align-self: flex-start;
+      }
+      #text-mx {
+        align-self: center;
+      }
+      #text-dx {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero .scooter {
+    position: absolute;
+    display: block;
+    max-width: 400px;
+    left: 3%;
+    bottom: 4%;
+  }
+}

@@ -1,0 +1,17 @@
+// home
+@import 'home';
+
+// Restaurants
+@import 'restaurants/create';
+@import 'restaurants/edit';
+
+// Orders
+@import 'orders/index';
+@import 'orders/show';
+@import 'orders/stats';
+
+// Dishes
+@import 'dishes/index';
+@import 'dishes/show';
+@import 'dishes/create';
+@import 'dishes/edit';

@@ -1,0 +1,98 @@
+.create-restaurant{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    // h1,
+    // h3{
+    //     text-transform: uppercase;
+    //     font-family: $title-font;
+    //     font-weight: bold;
+    // }
+    
+    // h1{
+    //     color: $secondaryColor;
+    // }
+}
+
+
+.create{
+    flex-direction: column;
+    align-items: center;
+    .form{
+        padding: 50px;
+        background-color: $lightBrand;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .all-categories,
+        .input{
+            flex-basis: 48%;
+        }
+        .input{
+            padding: 25px;
+        }
+        .all-categories{
+            flex-direction: column;
+            justify-content: space-between;
+            .img-create{
+                height: 200px;
+                margin-bottom: 20px;
+                position: relative;
+            }
+            .box-categories{
+                flex-wrap: wrap;
+                .category{
+                    flex-basis: calc(100% / 4);
+                }
+            }
+        }
+    }
+    .btn-create{
+        justify-content: center;
+        }
+}
+// MEDIA QUERY
+@media screen and (max-width: 1200px){
+    .create{
+        .form{
+            .all-categories{
+                .box-categories{
+                    .category{
+                        flex-basis: calc(100% / 3);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    .create{
+        .form{
+            .all-categories{
+                .box-categories{
+                    .category{
+                        flex-basis: calc(100% / 2);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .create{
+        .form{
+            .form-down{
+                flex-direction: column;
+                .input,
+                .all-categories{
+                    flex-basis: 100%;
+                    .box-categories{
+                        .category{
+                            flex-basis: calc(100% / 3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

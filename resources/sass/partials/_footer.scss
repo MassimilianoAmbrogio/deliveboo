@@ -1,0 +1,25 @@
+footer {
+    background: rgba($brandColor, 0.55);
+    color: $white;
+    // overflow: hidden;
+
+    p.disclaimer {
+        font-size: 1rem;
+        font-family: $admin-font;
+        margin-bottom: 0;
+        line-height: 2.7rem;
+    }
+
+    .gradient{
+        display: block;
+        width: 100%;
+        height: 12px;
+        background: linear-gradient(to left,
+        $brandColor 25%, $secondaryColor 25%, $secondaryColor 50%, $grey 50%, $grey 55%, $green 55%, $green 65%, $red 65%, $red 75%, $yellow 75%, $yellow 85%, $brandColor 85% )
+    }
+}
+@media screen and (max-width: 992px) {
+    footer {
+        // height: 40px;
+    }
+  }

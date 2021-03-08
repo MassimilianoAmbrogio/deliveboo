@@ -1,0 +1,54 @@
+main .order-show{
+
+  .bill-store {
+    margin: 0px auto;
+    max-width: 450px;
+    border: 2px dotted $grey;
+    padding: 10px;
+    text-align: center;
+  }
+  .btn-return {
+    width: 100%;
+    text-align: center;
+  }
+
+  h2,
+  h4 {
+    text-align: center;
+  }
+
+  i {
+    margin-left: 10px;
+  }
+
+  span {
+    // font-weight: bold;
+    font-weight: bold;
+  }
+
+  .btn{
+    background-color: $brandColor;
+    color: white;
+    padding: 8px 10px;
+  }
+
+  .tot {
+
+    i {
+      font-size: 40px;
+      // padding-right: 10px;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  main p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+}

@@ -1,0 +1,41 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Variables
+@import 'partials/variables';
+
+// Commons
+@import 'partials/commons';
+
+// Utilities
+@import 'partials/utilities';
+
+// Header
+@import 'partials/header';
+
+// Footer
+@import 'partials/footer';
+
+// Layouts
+@import 'partials/layouts/main';
+
+// Sidebar
+@import 'partials/sidebar';
+
+// Client
+@import 'partials/client/client';
+
+// Admin
+@import 'partials/admin/admin';
+
+// Errors
+@import 'partials/errors/404';
+
+// Login
+@import 'partials/auth/login';
+
+// Register
+@import 'partials/auth/register';

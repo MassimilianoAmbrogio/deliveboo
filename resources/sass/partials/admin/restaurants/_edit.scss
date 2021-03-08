@@ -1,0 +1,97 @@
+.create-restaurant{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.create{
+    flex-direction: column;
+    align-items: center;
+    .form{
+        padding: 50px;
+        background-color: $lightBrand;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .all-categories,
+        .input{
+            flex-basis: 48%;
+        }
+        .input{
+            padding: 25px;
+        }
+        .all-categories{
+            flex-direction: column;
+            justify-content: space-between;
+            .img-create{
+                margin-bottom: 20px;
+                position: relative;
+                img{
+                    margin: 0px auto;
+                }
+            }
+
+            .tag-list {
+                margin: 10px auto;
+            }
+
+            .box-categories{
+                flex-wrap: wrap;
+                .category{
+                    flex-basis: calc(100% / 4);
+                }
+            }
+        }
+    }
+    .btn-create{
+        justify-content: center;
+    }
+}
+
+// MEDIA QUERY
+@media screen and (max-width: 1200px){ 
+    .create{
+        .form{
+            .all-categories{
+                .box-categories{
+                    .category{
+                        flex-basis: calc(100% / 3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px){ 
+    .create{
+        .form{
+            .all-categories{
+                .box-categories{
+                    .category{
+                        flex-basis: calc(100% / 2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){ 
+    .create{
+        .form{
+            .form-down{
+                flex-direction: column;
+                .input,
+                .all-categories{
+                    flex-basis: 100%;
+                    .box-categories{
+                        .category{
+                            flex-basis: calc(100% / 3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

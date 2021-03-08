@@ -1,0 +1,33 @@
+section.error-page {
+    width: 50%;
+    margin: 0px auto;
+    background: url("../img/bg_404.jpg");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+
+    h1 {
+        font-family: $admin-font;
+        color: $grey;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 3rem;
+
+        .ops {
+            color: $brandColor;
+            font-size: 7rem;
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+
+    p {
+        color: $grey;
+        font-size: 1.5rem;
+    }
+}

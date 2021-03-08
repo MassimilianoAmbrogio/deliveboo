@@ -1,0 +1,13 @@
+.create-restaurant{
+    justify-content: center;
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img-success{
+            width: 170px;
+            margin-top: 60px;
+        }
+    }
+}
+

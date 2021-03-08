@@ -1,0 +1,79 @@
+.admin-title {
+    font-family: $admin-font;
+    font-size: 4rem;
+}
+
+.intro-menu {
+    display: block;
+    background: $lightGrey;
+    color: $grey;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 25px 10px;
+
+    a {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $brandColor;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    strong {
+        display: block;
+        font-size: 1.5rem;
+    }
+}
+
+.table a.btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $white;
+    margin: 0 2px;
+    outline: none;
+    border: 1px solid transparent;
+
+    &:hover {
+        color: $yellow;
+        border: 1px solid $yellow;
+    }
+}
+
+.table {
+
+    tr {
+        border-top: 1px solid $lightGrey;
+        font-size: 1.5rem;
+    }
+
+    th {
+        background-color: $secondaryColor;
+    }
+
+    th, td {
+        vertical-align: center;
+        text-align: center;
+        border-top: none;
+    }
+
+    form {
+        button {
+            color: $white;
+            margin: 0 2px;
+            &:hover {
+              color: $yellow;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .table thead tr th.off-smart,
+    .table tbody tr td.off-smart
+     {
+        display: none;
+    }
+  }

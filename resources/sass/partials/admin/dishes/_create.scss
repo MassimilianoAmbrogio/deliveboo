@@ -1,0 +1,38 @@
+.title-text {
+    text-align: center;
+}
+
+.name,
+.price,
+.img,
+.description1,
+.typology,
+.vegan1,
+.available1,
+.create-dishes,
+.submit1 {
+    margin-left: 25%;
+}
+
+.description1,
+.vegan1 {
+    margin-top: 15px;
+}
+
+.create-dishes {
+    max-width: 50%;
+}
+
+.btn-submit {
+    color: $white;
+    background: $brandColor;
+}
+
+.submit1 {
+    max-width: 150px;
+}
+
+input.btn.center-input {
+    display: block;
+    margin: 10px auto;
+}

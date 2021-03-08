@@ -1,0 +1,87 @@
+.content {
+  height: 90vh;
+
+  .cover {
+    flex-basis: 35%;
+    background-image: url('../img/bg_login.jpg');
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+  }
+
+  .access {
+    flex-basis: 65%;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+
+    .headline {
+
+      img {
+        max-width: 200px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 25px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $brandColor;
+      }
+
+      .email,
+      .password {
+        align-items: center;
+
+        .icon {
+          font-size: 25px;
+          margin-right: 15px;
+          border-radius: 50%;
+          background-color: yellow;
+          padding: 12px;
+        }
+
+        input {
+          border-radius: 0 30px 30px 0;
+        }
+      }
+
+      .remember {
+        padding-left: 80px;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .content {
+
+    .cover {
+      display: none;
+    }
+
+    .access {
+      flex-basis: 100%;
+      padding: 20px;
+      justify-content: center;
+
+
+      img {
+        display: none;
+      }
+
+
+      .password,
+      .email {
+        justify-content: center;
+      }
+    }
+
+  }
+
+}
